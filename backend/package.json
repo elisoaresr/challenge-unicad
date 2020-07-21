@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/server.ts " 
+    "start": "ts-node src/server.ts "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "knex": "^0.21.2",
+    "sqlite3": "^5.0.0"
+  },
   "devDependencies": {
     "@types/express": "^4.17.7",
     "express": "^4.17.1",
