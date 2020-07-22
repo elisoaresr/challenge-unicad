@@ -5,12 +5,11 @@ export async function up(knex: knex) {
     table.increments('id').primary();
     table.string('name').notNullable();
     table.date('date').notNullable();
-    table.string('up').notNullable();
-    table.string('down').notNullable();
+    table.string('send').notNullable();
+    table.string('done').notNullable();
     
   });
 }
-
 
 export async function down(knex: knex) {
   return knex.schema.dropTable('points');
