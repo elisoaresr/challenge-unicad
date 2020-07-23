@@ -17,6 +17,15 @@ routes.post('/points', async (request, response) => {
     done
   } = request.body;
 
+ await knex('items').insert({
+    name,
+    date,
+    send,
+    done
+  });
+
+  return response.json({ success: true })
+
 });
 
 export default routes;
