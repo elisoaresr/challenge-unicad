@@ -65,31 +65,3 @@ footer.footer {
           "footer footer";
   }
 }
-
-@media(max-width: 576px) {
-  .app {
-      grid-template-rows: 
-          var(--menu-top-height)
-          1fr
-          var(--footer-height);
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-        "menu"
-        "content"
-        "footer";
-
-    }
-}
-
-
-
-/*grid-template-rows: 
-var(--menu-top-height)
-1fr
-var(--footer-height);
-grid-template-columns: 1fr;
-grid-template-areas: 
-"header"
-"content"
-"menu"
-"footer";*/
