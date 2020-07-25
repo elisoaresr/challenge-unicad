@@ -9,3 +9,11 @@ header.header {
 header.header h1 {
     font-size: 1.8em;
 }
+
+.logo {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
