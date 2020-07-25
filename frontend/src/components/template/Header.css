@@ -17,3 +17,19 @@ header.header h1 {
     top: 15px;
     left: 15px;
 }
+
+header .mt-3 {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 15px;
+    left: 28%;
+}
+
+p {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 65px;
+    left: 28%;
+}

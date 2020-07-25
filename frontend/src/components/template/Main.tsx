@@ -3,10 +3,10 @@ import './Main.css';
 
 import Header from './Header';
 
-const Main = () => {
+const Main = (props: any) => {
   return (
     <React.Fragment>
-      <Header />
+      <Header {...props} />
       <main className="content">
         Conteúdo
       </main>
