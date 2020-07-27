@@ -1,19 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Nav.css';
 
 const Nav = () => {
   return (
     <aside className="menu-area">
       <nav className="menu">
-        <a href="#/">
+        <Link to="/">
           <i className="fa fa-home"></i> Início
-        </a>
-        <a href="#/delivery">
+        </Link>
+        <Link to="/delivery">
           <i className="fa fa-paper-plane"></i> Entregas
-        </a>
-        <a href="#/map">
+        </Link>
+        <Link to="/chart">
           <i className="fa fa-map"></i> Mapa
-        </a>
+        </Link>
       </nav>
     </aside>
   );
