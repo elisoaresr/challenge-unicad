@@ -7,13 +7,16 @@ import './App.css';
 
 import Nav from './components/template/Nav';
 import Home from './components/template/home/Home';
+import Main from './components/template/Main';
 import Footer from './components/template/Footer';
 
 
 export default (props: any) =>
   <BrowserRouter>
     <div className="app">
-      <Home />
+      <Main icon="home" title="Início"
+        subtitle="Sistema de entrega de mercadorias para clientes"/>
+      <Home />  
       <Nav />
       <Footer />
     </div>

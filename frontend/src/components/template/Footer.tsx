@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      Rodapé
+      Challenge Unicad - 2020
     </footer>
   );
 }
