@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from '../Main';
+import Main from '../../template/Main';
 
 const Home = (props: any) => {
   return (

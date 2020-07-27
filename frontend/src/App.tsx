@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 import Nav from './components/template/Nav';
-import Home from './components/template/home/Home';
+import Home from './components/pages/Home/Home';
 import Main from './components/template/Main';
 import Footer from './components/template/Footer';
 
