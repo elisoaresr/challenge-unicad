@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import Main from '../../template/Main';
 
 const headerProps = {
@@ -24,7 +25,7 @@ const Home = (props: any) => {
             <div className="form group">
               <label>Data de Entrega</label>
               <input type="date" className="form-control"
-                name="name" placeholder="Digite a data de Entrega" />
+                name="date" placeholder="Digite a data de Entrega" />
             </div>
           </div>
 
@@ -33,7 +34,7 @@ const Home = (props: any) => {
             <div className="form group">
               <label>Ponto de Partida</label>
               <input type="text" className="form-control"
-                name="name" placeholder="Digite o endereço" />
+                name="send" placeholder="Digite o endereço" />
             </div>
           </div>
 
@@ -42,7 +43,7 @@ const Home = (props: any) => {
             <div className="form group">
               <label>Ponto de destino</label>
               <input type="text" className="form-control"
-                name="name" placeholder="Digite o endereço" />
+                name="done" placeholder="Digite o endereço" />
             </div>
           </div>
         </div>
