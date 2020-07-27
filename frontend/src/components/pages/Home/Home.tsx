@@ -1,9 +1,15 @@
 import React from 'react';
 import Main from '../../template/Main';
 
+const headerProps = {
+  icon: 'home',
+  title: 'Início',
+  subtitle: "Sistema de entrega de mercadorias para clientes"
+}
+
 const Home = (props: any) => {
   return (
-    <Main>
+    <Main {...headerProps}>
       <div className="form">
         <div className="row">
           <div className="col-12 col-md-6">
