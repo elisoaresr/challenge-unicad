@@ -4,7 +4,6 @@ import api from '../../services/api';
 import './styles.css';
 
 import Main from '../../template/Main';
-import { runInThisContext } from 'vm';
 
 const headerProps = {
   icon: 'truck ',
