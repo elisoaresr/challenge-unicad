@@ -10,9 +10,9 @@ const headerProps = {
 const Map = (props: any) => {
   return (
     <Main {...headerProps}>
-      <div className="row">
-        Recebe um Mapa
-    </div>
+      <form>
+
+      </form>
     </Main>
   );
 }

@@ -1,5 +1,11 @@
-.row {
-    padding: 0px 15px;
-    overflow: hidden;
-    white-space: nowrap;
-}
+
+.items-grid {
+	list-style: none;
+	width: 100%;
+  }
+  
+  .items-grid li span {
+    margin: 10px;
+ 
+  }
+  
