@@ -1,35 +1,53 @@
 header.header {
-    background-color: #FFF;
-    padding: 0px 15px;
-    overflow: hidden;
-    white-space: nowrap;
-    box-shadow: var(--shadow);
+  background-color: #FFF;
+  padding: 0px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
 }
 
 header.header h1 {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 .logo {
-    height: 100px;
-    width: 300px;
-    position: relative;
-    top: 15px;
-    left: 15px;
+  height: 100px;
+  width: 300px;
+  position: relative;
+  top: 15px;
+  left: 15px;
 }
 
 header .mt-3 {
-    height: 100px;
-    width: 300px;
-    position: absolute;
-    top: 15px;
-    left: 28%;
+  height: 100px;
+  width: 300px;
+  position: fixed;
+  top: 15px;
+  left: 28%;
 }
 
 p {
-    height: 100px;
-    width: 300px;
-    position: absolute;
-    top: 65px;
-    left: 28%;
+  height: 100px;
+  width: 300px;
+  position: fixed;
+  top: 65px;
+  left: 28%;
+}
+
+@media(max-width: 1268px) {
+  header.header h1 {
+    margin-left: 15%;
+  }
+  header.header p {
+    margin-left: 15%;
+  }
+}
+
+@media(max-width: 768px) {
+  header.header h1 {
+    margin-left: 30%;
+  }
+  header.header p {
+    margin-left: 30%;
+  }
 }

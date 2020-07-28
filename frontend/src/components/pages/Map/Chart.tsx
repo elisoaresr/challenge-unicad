@@ -12,7 +12,7 @@ const headerProps = {
 const Home = (props: any) => {
   return (
     <Main {...headerProps}>
-        <Map center={[-22.7261835, -43.6375562]} zoom={15}>
+      <Map center={[-22.7261835, -43.6375562]} zoom={15}>
           <TileLayer
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
