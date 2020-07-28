@@ -10,14 +10,14 @@ Após o download das dependências rodar:
 
 ### `npm run start` 
 
-(Dentro do diretório back-end que rodará na porta 3333)
+(Dentro do diretório back-end que rodará em  [http://localhost:3333])
 
 Logo após deverá abrir uma nova aba no terminal e executar o comando:
 
 ### `npm start`
 
 Executa a aplicação no modo de desenvolvimento. <br />
-Abra [http://localhost:3000] (para visualizá-lo no navegador).
+Que por padrão é inicializada em [http://localhost:3000] (para visualizá-lo no navegador).
 
 
 
