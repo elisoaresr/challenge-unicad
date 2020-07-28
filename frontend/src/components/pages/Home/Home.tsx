@@ -23,7 +23,7 @@ const Home = (props: any) => {
     setFormData({ ...formData, [name]: value })
   }
 
-  function handleSubmit(event: FormEvent) {
+ async function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
     const { name, date, send, done } = formData
@@ -34,12 +34,13 @@ const Home = (props: any) => {
       send,
       done
     };
-    console.log(data);
+  await api.post('points', data);
+
+  alert('Cadastro concluído!');
   }
 
   function handleClearInput(event: FormEvent) {
-    event.preventDefault();
-    
+    event.preventDefault(); 
   }
 
   return (
