@@ -1,4 +1,4 @@
-import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 
 import api from '../../services/api';
 import Main from '../../template/Main';
@@ -10,19 +10,12 @@ const headerProps = {
 }
 
 const Home = (props: any) => {
-  const [item, setItems] = useState([]);
   const [formData, setFormData] = useState({
     name: '',
     date: '',
     send: '',
     done: ''
   });
-
-  useEffect(() => {
-    api.get('points').then(response => {
-      console.log(response);
-    });
-  }, []);
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
     const { name, value } = event.target;
@@ -44,9 +37,14 @@ const Home = (props: any) => {
     console.log(data);
   }
 
+  function handleClearInput(event: FormEvent) {
+    event.preventDefault();
+    
+  }
+
   return (
     <Main {...headerProps}>
-      <div className="form" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-12 col-md-6">
             <div className="form group">
@@ -92,12 +90,13 @@ const Home = (props: any) => {
               Salvar
             </button>
 
-            <button className="btn btn-secondary ml-2">
+            <button className="btn btn-secondary ml-2"
+              onClick={handleClearInput}>
               Cancelar
             </button>
           </div>
         </div>
-      </div>
+      </form>
     </Main>
   );
 }
