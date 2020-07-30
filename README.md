@@ -16,7 +16,7 @@ Logo após deverá abrir uma nova aba no terminal e executar o comando:
 
 ### `npm start`
 
-Executa a aplicação no modo de desenvolvimento. <br />
+Executará a aplicação no modo de desenvolvimento. <br />
 Que por padrão é inicializada em [http://localhost:3000] (para visualizá-la no navegador).
 
 
