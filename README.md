@@ -4,7 +4,7 @@ No diretório do projeto, você pode executar:
 
 ### `npm i ou install`
 Para fazer o download das dependências utilizadas no projeto. <br />
-O comando deve ser rodado tanto dentro do diretório "server" quanto <br /> no "web".
+O comando deve ser rodado tanto dentro do diretório "back-end" quanto <br /> no "front-end".
 
 Após o download das dependências rodar:
 
